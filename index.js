@@ -7,7 +7,7 @@ data.forEach(function(item, i) {
 });
 
 function readData() {
-  return fs.readFileSync('data.txt', 'UTF-8').split('\n')
+  return fs.readFileSync(__dirname + '/data.txt', 'UTF-8').split('\n')
 }
 
 function randomIndex(length) {
